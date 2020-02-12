@@ -1,27 +1,25 @@
 pipeline
 {
     agent any
+    stages
     {
-        stages
-        {
-            stage('Dev'){
-                steps{
-                    echo "Into Dev"
-                }
-
+        stage('Dev'){
+            steps{
+                echo "Into Dev"
             }
-            stage('Test'){
-                steps{
-                    echo "Into Test"
-                }
 
+        }
+        stage('Test'){
+            steps{
+                echo "Into Test"
             }
-            stage('UAT'){
-                steps{
-                    echo "Into UAT"
-                }
 
+        }
+        stage('UAT'){
+            steps{
+                echo "Into UAT"
             }
+
         }
     }
 }
