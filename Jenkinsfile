@@ -5,13 +5,22 @@ pipeline
         stages
         {
             stage('Dev'){
-                echo "Into Dev"
+                steps{
+                    echo "Into Dev"
+                }
+
             }
-            stage("Test"){
-                echo "Into Test"
+            stage('Test'){
+                steps{
+                    echo "Into Test"
+                }
+
             }
-            stage("UAT"){
-                echo "Into UAT"
+            stage('UAT'){
+                steps{
+                    echo "Into UAT"
+                }
+
             }
         }
     }
